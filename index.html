@@ -4,35 +4,53 @@
 <head>
     <meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
-	<title>WolfY_D3v - Portfolio</title>
+	<title>WolfY_D3v - Projets</title>
 </head>
 
 <body>
-    <h2 class="title" style="text-align: center;">WolfY_D3v - Portfolio</h2>
+    <h2 class="title" style="text-align: center;">Je vous souhaite la bienvenue dans mon portfolio</h2>
     
-	<h2>Moi c'est WolfY_D3v (Larue Ulrick-Nathaniel dans la vrai vie).</h2>
-	<div style="text-align: center;">
-		<img src="images/Photo de profil.png" alt="[moi en ligne]" style="width:110px;  height:100px;">
-		<img src="images/sam.png" alt="[moi en vrai]" style="width:100px;  height:100px;">
-	</div>
-
-	<h2>Je suis développeur indépendant de jeux, et développeur web/web mobile.</h2>
-	<h2>Au fil du temps j'ai créé mon univers particulier à travers plusieurs médias.</h2>
-
+    <div style="text-align: center;">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NmcXJubTVhZzZjbmEwMWVpenR3M2RrOGFseTVrNDZjbHdsc3JqZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ASd0Ukj0y3qMM/200.webp">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NmcXJubTVhZzZjbmEwMWVpenR3M2RrOGFseTVrNDZjbHdsc3JqZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XD9o33QG9BoMis7iM4/200.webp">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NmcXJubTVhZzZjbmEwMWVpenR3M2RrOGFseTVrNDZjbHdsc3JqZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3ogwFGEHrVxusDbDjO/200.webp">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3N3cyNDJzZ3BoZmYwendoYXd3Mjc4dnB4MmJ3aWkxZ21qa2hnYm54YSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/yyVph7ANKftIs/200.webp">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MTIycmg0dTF0MGxuYWx2M2ZuN2FkNnBraHB6dndweXBrZGEzb3VzYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Y8ocCgwtdj29O/200.webp">
+    </div>
+    <h2 style="text-align: center; font-size: 20px" id="binary" onmouseenter="binary_hover()" onmouseleave="binary_normal()">|[01000111 01110101 01110100 01100101 01101110 00100000 01110100 01100001 01100111 00100001]|</h2>
+    
+	<h2><u>Qui suis-je?</u></h2>
+    <ul>
+        <div>
+            <h4>-> [IDENTITE] (WolfY_D3v en ligne)</h4>
+	        <div>
+		        <img src="images/Photo de profil.png" alt="[moi en ligne]" style="width:85px;  height:75px;">
+		        <img src="images/sam.png" alt="[moi en ligne également]" style="width:75px;  height:75px;">
+	        </div>
+        </div>
+        <h4>-> Développeur indépendant de jeux vidéos</h4>
+        <h4>-> En formation de développeur web/web mobile</h4>
+    </ul>
+    
 	<div class="section">
 	    <div class="sites">
 		    <ul>
                 <div class="inner-section">
 					<li><u>pagesExplorer</u></li>
 					<ul>
-						<div class="line1">
-                            <li><a href="games.html" class="hover-anim">Mes jeux</a></li>
+                        <div style="background-color: #C97B79; font-size: 40; font-family: 'Chivo Mono'; transform: scale(1.0);">
+                            <li><a href="games.html" class="hover-anim" style="color: #3C3B37; text-decoration: underline;"><b>Projets</b></a></li>
                         </div>
 						<div class="line2">
-                            <li><a href="project_superluna.html" class="hover-anim">Compétences technologiques</a></li>
+                            <li><a class="hover-anim"><b>Langages</b></a></li>
+                            <div style="display: grid; grid-template-columns: repeat(3, auto); grid-gap: 5px;">
+                                <h2 style="color: #7998C5;">Python</h2>
+                                <h2 style="color: #7998C5;">GDScript</h2>
+                                <h2 style="color: #7998C5;">html/css/js</h2>
+                            </div>
                         </div>
 						<div class="line1">
-                            <li><a href="arts.html" class="hover-anim">Mon art</a></li>
+                            <li><a href="arts.html" class="hover-anim"><b>Mon art</b></a></li>
                         </div>
 					</ul>
                 </div>
@@ -40,3 +58,15 @@
 	    </div>
     </div>
 </body>
+
+<script>
+let binary = document.getElementById("binary");
+
+function binary_normal() {
+    binary.innerText = "|[01000111 01110101 01110100 01100101 01101110 00100000 01110100 01100001 01100111 00100001]|";
+}
+
+function binary_hover() {
+    binary.innerText = "|[Guten tag!]|";
+}
+</script>
