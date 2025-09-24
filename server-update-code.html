@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+	<title></title>
+</head>
+
+<body style="background-color: black;">
+    <div>
+        <h3 style="font-family: 'Pixelify Sans'; font-optical-sizing: auto; color: green;">
+            # Start the server update process
+            <br/>
+            echo ""
+            <br/>
+            echo "Mise à jour commencée à:"
+            <br/>
+            date
+            <br/>
+            sleep 2s
+            <br/>
+            <br/>
+            <br/>
+            # Get the updated site from the Github, and delete the local old one
+            <br/>
+            echo ""
+            <br/>
+            echo "- MISE A JOUR DES DONNEES SUR LE BUREAU -"
+            <br/>
+            sleep 1s
+            <br/>
+            echo "Mise à jour des données du serveur en cours..."
+            <br/>
+            sleep 0.5s
+            <br/>
+            ## Delete the old version of the site
+            <br/>
+            echo ""
+            <br/>
+            echo ">>> Suppression de la copie des données du serveur datée sur le bureau..."
+            <br/>
+            cd ~/Desktop
+            <br/>
+            rm -rf WolfY_D3v_Server_BACKUP_REPOSITORY
+            <br/>
+            echo ">>> Copie datée des données du serveur supprimée avec succès!"
+            <br/>
+            sleep 0.5s
+            <br/>
+            ## Fetching the updated version of the site from the Github
+            <br/>
+            echo ""
+            <br/>
+            echo ">>> Clonage du Github du serveur sur le bureau en cours..."
+            <br/>
+            git clone https://WolfYD3v:[MON_TOKEN]@github.com/WolfYD3v/WolfY_D3v_Server_BACKUP_REPOSITORY.git
+            <br/>
+            echo ">>> Github cloné dans le bureau avec succès!"
+            <br/>
+            sleep 0.5s
+            <br/>
+            <br/>
+            <br/>
+            # Copying the bureau version to the right directory
+            <br/>
+            echo ""
+            <br/>
+            echo "- CHANGEMENT DES DONNEES DU SITE -"
+            <br/>
+            sleep 1s
+            <br/>
+            ## Go the the right folder
+            <br/>
+            cd /var/www/html
+            <br/>
+            sleep 0.5s
+            <br/>
+            ## Delete the old version stored
+            <br/>
+            echo "psw" | sudo -S -k rm -rf WolfY_D3v_Server_BACKUP_REPOSITORY
+            <br/>
+            sleep 0.5s
+            <br/>
+            ## Copy the updated version on the desktop into the right folder
+            <br/>
+            echo "psw" | sudo -S -k cp -r ~/Desktop/WolfY_D3v_Server_BACKUP_REPOSITORY .
+            <br/>
+            sleep 0.5s
+            <br/>
+            <br/>
+            <br/>
+            # Delete the version in the desktop
+            <br/>
+            cd ~/Desktop
+            <br/>
+            rm -rf WolfY_D3v_Server_BACKUP_REPOSITORY
+            <br/>
+            echo ""
+            <br/>
+            <br/>
+            <br/>
+            # Restarting Apache2 service
+            <br/>
+            echo ""
+            <br/>
+            echo "- RESTARTING APACHE2 SERVICE -"
+            <br/>
+            echo "psw" | sudo -S -k service apache2 restart
+            <br/>
+            sleep 0.5s
+            <br/>
+            <br/>
+            <br/>
+            # Update process ended after a 5 seconds delay
+            <br/>
+            cd
+            <br/>
+            echo ""
+            <br/>
+            echo "Mise à jour des données du serveur finie à:"
+            <br/>
+            date
+            <br/>
+            sleep 5s
+            <br/>
+            clear
+            <br/>
+        </h3>
+    </div>
+</body>
