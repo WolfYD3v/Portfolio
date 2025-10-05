@@ -52,6 +52,23 @@
         color 0.5s !important;
 }
 
+.github-repo-button-reversed {
+    background-color: var(--title-font-color);
+    text-decoration: none;
+    color: black !important;
+    transition:
+        background-color 0.3s,
+        color 0.2s !important;
+}
+.github-repo-button-reversed:hover {
+    background-color: black;
+    text-decoration: none;
+    color: var(--title-font-color) !important;
+    transition:
+        background-color 0.6s,
+        color 0.5s !important;
+}
+
 h1 {
 	font-size: 45px;
     font-family: var(--default-font-family);
@@ -89,6 +106,12 @@ ul {
     padding: 0;
 }
 
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 .hover-anim {
     text-align: left !important;
@@ -97,6 +120,7 @@ ul {
 
 a {
     max-width: 100%;
+    font-family: var(--default-font-family);
 }
 
 .line1 {
@@ -171,6 +195,9 @@ a {
 
 body {
 	background-color: #000000;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .section {
@@ -186,4 +213,85 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 5px;
+}
+
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    margin: 6em auto;
+    display: flex;
+    gap: 0em;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-right-button {
+    /* Example positioning to place it on the right side */
+    position: absolute; 
+    right: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-color: #7998C5;
+    border-width: 4px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+.scroll-left-button {
+    /* Example positioning to place it on the right side */
+    position: absolute; 
+    left: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-color: #7998C5;
+    border-width: 4px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+
+.card {
+    flex: 0 0 99.4%;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    transform: scale(1.0);
+    transform: rotate(0deg);
+    transition:
+        transform 0.2s;
+}
+.link-button:hover {
+    background: none;
+    border: none;
+    transform: scale(1.1);
+    transform: rotate(10deg);
+    transition:
+        transform 0.5s;
+}
+.link-button:focus {
+    background: none;
+    border: none;
+    transform: scale(5.5);
+    transform: rotate(0deg);
+    transition:
+        transform 0.25s;
+}
+
+img {
+    transform: scale(1.0);
+    transition: 
+        transform 1.0s;
+}
+img:hover {
+    transform: scale(1.03);
+    transition: 
+        transform 2.5s;
 }

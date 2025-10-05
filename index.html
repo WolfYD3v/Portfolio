@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="images/pp.png">
 	<link rel="stylesheet" href="style.css">
 	<title>WolfY_D3v - Projets</title>
 </head>
@@ -13,60 +14,130 @@
     <div style="text-align: center;">
     </div>
     
-    <div class="wrapper" style="grid-gap: 50px;">
+    <div style="text-align: center;">
+        <b style="font-size: 20px; text-align: center;">
+            <button onclick="window.open('https://github.com/WolfYD3v',);" class="link-button">
+                <img src="images/github.jpeg" width="50" height="50"/>
+            </button>
+            <button onclick="window.open('https://discord.gg/wqHbYyJttk',);"  class="link-button">
+                <img src="images/discord.png" width="50" height="50"/>
+            </button>
+            <button onclick="window.open('https://rvlt.gg/VkW7t5WW',);"  class="link-button">
+                <img src="images/revolt.png" width="50" height="50"/>
+            </button>
+            <button onclick="window.open('https://wolfy400.itch.io/',);"  class="link-button">
+                <img src="images/itchio.png" width="50" height="50"/>
+            </button>
+        </b>
+    </div>
+
+    <div>
         <div>
-            <h2><u>Qui suis-je?</u></h2>
-            <div>
-                <h3>[IDENTITE] (WolfY_D3v en ligne), français (France)</h3>
-                <div>
-                    <img src="images/Photo de profil.png" alt="[moi en ligne]" style="width:85px;  height:75px;">
-                    <img src="images/sam.png" alt="[moi en ligne également]" style="width:75px;  height:75px;">
+            <div class="carousel">
+                <div id="card1" class="card" style="background-color: rgb(29, 29, 36); border: 4px solid; border-color: #7998C5;">
+                    <h2><u>Qui suis-je?</u></h2>
+                    <div>
+                        <h3>[IDENTITE] (WolfY_D3v en ligne), français (France)</h3>
+                        <img src="images/pp.png" alt="[moi en ligne]" style="width:75px;  height:75px;">
+                    </div>
+                    <h3>
+                        Je suis développeur indépendant de jeux vidéos avec Godot, en formation pour devenir développeur web/web mobile.
+                        <br/>
+                        Je suis une personne créative, perfectionniste et curieuse qui aime dessiner, coder et créer en règle générale. Pour m'exprimer par dessus tout, et car j'ai toujours eu cette envie.
+                        <br/><br/>
+                        Je suis toujours en recherche d'apprendre quelque chose de nouveau dans les domaines que j'aime, surtout dans celui de la programmation avec de nouveaux langages (Rust, etc).
+                    </h3>
+                    <b style="font-size: 30px; text-align: center;">
+                        <a href="games.html" class="github-repo-button-reversed">Voir mes projets</a>
+                    </b>
+                </div>
+
+                <div id="card2" class="card" style="background-color: rgb(17, 17, 19); border: 4px solid; border-color: #7998C5;">
+                    <h2><u>Langages</u></h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, auto); grid-gap: 5px;">
+                        <div class="inner-section">
+                            <h2 style="color: #7998C5; text-align: center;"><u>Python</u></h2>
+                            <li>
+                                <ul style="text-align: left;">- Etudié au Lycée</ul>
+                                <ul style="text-align: left;">
+                                    - Utilisé pour créer 
+                                    <a href="https://github.com/WolfYD3v/WindWolfRepository/tree/main/mb">WindWolf</a>
+                                     et 
+                                    <a href="https://github.com/WolfYD3v/ContrainteMon---The-tool-to-make-your-PokeMMO-experience-better">ContrainteMon</a>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="inner-section">
+                            <h2 style="color: #7998C5; text-align: center;"><u>GDScript</u></h2>
+                            <li>
+                                <ul style="text-align: left;">- Utilisé pour créer mes jeux avec Godot Engine</ul>
+                            </li>
+                        </div>
+
+                        <div class="inner-section">
+                            <h2 style="color: #7998C5; text-align: center;"><u>html/css/js</u></h2>
+                            <li>
+                                <ul style="text-align: left;">- Employé pour le développement web</ul>
+                            </li>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h3>
-                Je suis développeur indépendant de jeux vidéos avec Godot, en formation pour devenir développeur web/web mobile.
-                <br/>
-                Je suis une personne créative, perfectionniste et curieuse qui aime dessiner, coder et créer en règle générale. Pour m'exprimer par dessus tout, et car j'ai toujours eu cette envie.
-                <br/><br/>
-                Je suis toujours en recherche d'apprendre quelque chose de nouveau dans les domaines que j'aime, surtout dans celui de la programmation avec de nouveaux langages (Rust, etc).
-            </h3>
+        <button class="scroll-right-button">
+            &raquo;
+        </button>
+        <button class="scroll-left-button">
+            &laquo;
+        </button>
         </div>
-
-        <div>
-            <ul>
-                <b style="font-size: 20px; text-align: center;">
-                    <a href="https://github.com/WolfYD3v" class="github-repo-button">Mon Github</a>
-                </b>
-            </ul>
-        </div>
-    </div>
-    
-	<div class="section">
-	    <div class="sites">
-		    <ul>
-                <div class="inner-section">
-					<li><u>pagesExplorer</u></li>
-					<ul>
-                        <div style="background-color: rgb(29, 29, 36); font-size: 40; font-family: 'Chivo Mono'; transform: scale(1.0);">
-                            <li><a href="games.html" class="hover-anim" style="color: #ffffff; text-decoration: underline;"><b>Projets</b></a></li>
-                        </div>
-						<div class="line2">
-                            <li><a class="hover-anim"><b>Langages</b></a></li>
-                            <div style="display: grid; grid-template-columns: repeat(3, auto); grid-gap: 5px;">
-                                <h2 style="color: #000000;">Python</h2>
-                                <h2 style="color: #000000;">GDScript</h2>
-                                <h2 style="color: #000000;">html/css/js</h2>
-                            </div>
-                        </div>
-						<div class="line1">
-                            <li><a href="arts.html" class="hover-anim"><b>Mon art</b></a></li>
-                        </div>
-					</ul>
-                </div>
-		    </ul>
-	    </div>
     </div>
 </body>
 
 <script>
+    // Merci Gemini pour ce script js, créer un site qui marche partout demande d'aller loin parfois...
+    let carouselMovement = window.innerWidth;
+    let moving = 0;
+    let minMoving = 0;
+    let maxMoving = 1;
+
+    document.querySelector('.scroll-right-button').addEventListener('click', function() {
+        const carousel = document.querySelector('.carousel');
+        carouselMovement = window.innerWidth;
+        
+        if (moving == minMoving) {
+            moving = maxMoving;
+            carousel.scrollBy({
+                left: carouselMovement,
+                behavior: 'smooth'
+            });
+        }
+        else {
+            moving = minMoving;
+            carousel.scrollBy({
+                left: -carouselMovement,
+                behavior: 'smooth'
+            });
+        };
+    });
+
+    document.querySelector('.scroll-left-button').addEventListener('click', function() {
+        const carousel = document.querySelector('.carousel');
+        carouselMovement = window.innerWidth;
+
+        if (moving == maxMoving) {
+            moving = minMoving;
+            carousel.scrollBy({
+                left: -carouselMovement,
+                behavior: 'smooth'
+            });
+        }
+        else {
+            moving = maxMoving;
+            carousel.scrollBy({
+                left: carouselMovement,
+                behavior: 'smooth'
+            });
+        };
+    });
 </script>
